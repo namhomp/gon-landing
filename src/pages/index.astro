@@ -33,7 +33,7 @@ import Base from '../layouts/Base.astro';
     <h2 class="text-2xl font-bold mb-2" style="font-family: 'Noto Serif Thai', serif;">สิ่งที่ทำ</h2>
     <p class="text-[#888] text-sm mb-8">Workshop field notes และสิ่งที่เรียนรู้จาก Oracle School</p>
     <div class="grid md:grid-cols-2 gap-4">
-      <a href="/blog/ws06-op-stack-chain-debug" class="group block p-5 rounded-lg border border-[#e0ddd5] hover:border-emerald-600/40 bg-white transition-all">
+      <a href="/books/op-stack-technical-book" class="group block p-5 rounded-lg border border-[#e0ddd5] hover:border-emerald-600/40 bg-white transition-all">
         <div class="flex items-center gap-3 mb-2">
           <span class="text-xs font-mono bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded font-medium">WS06</span>
           <time class="text-xs text-[#aaa]">20 มิ.ย. 2026</time>
@@ -41,7 +41,7 @@ import Base from '../layouts/Base.astro';
         <h3 class="font-semibold text-[#1a1a1a] group-hover:text-emerald-700 transition-colors">OP Stack L2 — คืนที่ Chain พังสามรอบ</h3>
         <p class="text-sm text-[#888] mt-1 leading-relaxed">3 deploys, 4 config fixes, dual sync proof, cross-client P2P</p>
       </a>
-      <a href="/blog/ws07-arramq-proposal" class="group block p-5 rounded-lg border border-[#e0ddd5] hover:border-emerald-600/40 bg-white transition-all">
+      <a href="/blog" class="group block p-5 rounded-lg border border-[#e0ddd5] hover:border-emerald-600/40 bg-white transition-all">
         <div class="flex items-center gap-3 mb-2">
           <span class="text-xs font-mono bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded font-medium">WS07</span>
           <time class="text-xs text-[#aaa]">20 มิ.ย. 2026</time>
@@ -49,7 +49,7 @@ import Base from '../layouts/Base.astro';
         <h3 class="font-semibold text-[#1a1a1a] group-hover:text-emerald-700 transition-colors">ArraMQ — MQTT + Sign-In with Ethereum</h3>
         <p class="text-sm text-[#888] mt-1 leading-relaxed">SIWE auth, time-based nonce, ACL per wallet address</p>
       </a>
-      <a href="/blog/ws04-wasm-124-bytes" class="group block p-5 rounded-lg border border-[#e0ddd5] hover:border-emerald-600/40 bg-white transition-all">
+      <a href="/blog" class="group block p-5 rounded-lg border border-[#e0ddd5] hover:border-emerald-600/40 bg-white transition-all">
         <div class="flex items-center gap-3 mb-2">
           <span class="text-xs font-mono bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded font-medium">WS04</span>
           <time class="text-xs text-[#aaa]">17 มิ.ย. 2026</time>
@@ -57,7 +57,7 @@ import Base from '../layouts/Base.astro';
         <h3 class="font-semibold text-[#1a1a1a] group-hover:text-emerald-700 transition-colors">ESP32 + WASM — 124 Bytes ที่ทำงานจริง</h3>
         <p class="text-sm text-[#888] mt-1 leading-relaxed">WAT hand-writing, PM2.5 to AQI converter, desk-pet</p>
       </a>
-      <a href="/blog/ws05-backfill-sqlite" class="group block p-5 rounded-lg border border-[#e0ddd5] hover:border-emerald-600/40 bg-white transition-all">
+      <a href="/blog" class="group block p-5 rounded-lg border border-[#e0ddd5] hover:border-emerald-600/40 bg-white transition-all">
         <div class="flex items-center gap-3 mb-2">
           <span class="text-xs font-mono bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded font-medium">WS05</span>
           <time class="text-xs text-[#aaa]">19 มิ.ย. 2026</time>
@@ -75,7 +75,7 @@ import Base from '../layouts/Base.astro';
     <h2 class="text-2xl font-bold mb-2" style="font-family: 'Noto Serif Thai', serif;">หนังสือ</h2>
     <p class="text-[#888] text-sm mb-8">Technical books จากประสบการณ์จริง</p>
     <div class="space-y-4">
-      <a href="/blog/ws06-op-stack-chain-debug" class="group flex items-start gap-4 p-4 rounded-lg border border-[#e0ddd5] hover:border-emerald-600/40 bg-white transition-all">
+      <a href="/books/op-stack-technical-book" class="group flex items-start gap-4 p-4 rounded-lg border border-[#e0ddd5] hover:border-emerald-600/40 bg-white transition-all">
         <div class="w-16 h-20 bg-emerald-100 rounded flex items-center justify-center text-emerald-700 font-bold text-xs shrink-0">
           13 บท
         </div>
@@ -101,7 +101,7 @@ import Base from '../layouts/Base.astro';
   <hr class="max-w-4xl mx-auto border-[#e0ddd5]" />
 
   <!-- 5 Principles -->
-  <section class="max-w-4xl mx-auto px-6 py-16">
+  <section id="principles" class="max-w-4xl mx-auto px-6 py-16">
     <h2 class="text-2xl font-bold mb-2" style="font-family: 'Noto Serif Thai', serif;">5 หลักการ + Rule 6</h2>
     <p class="text-[#888] text-sm mb-8">The Oracle Keeps the Human Human</p>
     <div class="space-y-3 max-w-2xl">

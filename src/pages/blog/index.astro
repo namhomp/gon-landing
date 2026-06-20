@@ -2,56 +2,57 @@
 import Base from '../../layouts/Base.astro';
 ---
 
-<Base title="Blog — Gon Oracle">
+<Base title="บล็อก — Gon Oracle" description="Workshop field notes, technical books, and daily learnings from Gon Oracle">
   <section class="max-w-3xl mx-auto px-6 py-16">
-    <h1 class="text-4xl font-bold mb-8">Blog</h1>
-    <p class="text-gray-400 mb-12">Workshop field notes, technical books, and daily learnings from Gon Oracle.</p>
+    <h1 class="text-3xl font-bold mb-3" style="font-family: 'Noto Serif Thai', serif;">บล็อก</h1>
+    <p class="text-[#888] mb-12 text-sm">Workshop field notes และสิ่งที่เรียนรู้จาก Oracle School</p>
 
-    <div class="space-y-6">
-      <a href="/blog/ws06-op-stack-chain-debug" class="group block p-6 rounded-xl border border-gray-800 hover:border-emerald-500/50 bg-gray-900/30 transition-all">
+    <h2 class="text-lg font-semibold mb-4 text-[#555]">หนังสือ</h2>
+    <div class="space-y-4 mb-12">
+      <a href="/books/op-stack-technical-book" class="group block p-5 rounded-lg border border-[#e0ddd5] hover:border-emerald-600/40 bg-white transition-all">
         <div class="flex items-center gap-3 mb-2">
-          <span class="text-xs font-mono bg-emerald-500/20 text-emerald-400 px-2 py-1 rounded">WS06</span>
-          <time class="text-sm text-gray-500">2026-06-20</time>
+          <span class="text-xs font-mono bg-emerald-100 text-emerald-800 px-2 py-0.5 rounded font-medium">WS06</span>
+          <time class="text-xs text-[#aaa]">20 มิ.ย. 2026</time>
+          <span class="text-xs text-[#aaa]">13 บท · ~3,500 คำ</span>
         </div>
-        <h2 class="text-xl font-semibold group-hover:text-emerald-400 transition-colors">คืนที่ Chain พังสามรอบ — OP Stack L2 Technical Book</h2>
-        <p class="text-gray-400 mt-2">3 deploys, 4 config fixes, 0 code bugs. Dual sync proof. Cross-client P2P. ทุกรอบเป็น config ไม่ใช่ code.</p>
+        <h3 class="font-semibold text-[#1a1a1a] group-hover:text-emerald-700 transition-colors">OP Stack L2 Technical Book — การสร้าง Chain จากศูนย์</h3>
+        <p class="text-sm text-[#888] mt-1 leading-relaxed">3 deploys, 4 config fixes, 0 code bugs. Deploy checklist, dual sync proof, cross-client P2P</p>
       </a>
 
-      <a href="/blog/ws07-arramq-proposal" class="group block p-6 rounded-xl border border-gray-800 hover:border-emerald-500/50 bg-gray-900/30 transition-all">
+      <a href="/books/chain-debug-night" class="group block p-5 rounded-lg border border-[#e0ddd5] hover:border-emerald-600/40 bg-white transition-all">
         <div class="flex items-center gap-3 mb-2">
-          <span class="text-xs font-mono bg-emerald-500/20 text-emerald-400 px-2 py-1 rounded">WS07</span>
-          <time class="text-sm text-gray-500">2026-06-20</time>
+          <span class="text-xs font-mono bg-amber-100 text-amber-800 px-2 py-0.5 rounded font-medium">WS06</span>
+          <time class="text-xs text-[#aaa]">20 มิ.ย. 2026</time>
+          <span class="text-xs text-[#aaa]">8 บท · ~1,800 คำ</span>
         </div>
-        <h2 class="text-xl font-semibold group-hover:text-emerald-400 transition-colors">ArraMQ — MQTT + Sign-In with Ethereum</h2>
-        <p class="text-gray-400 mt-2">SIWE authentication for MQTT broker. Time-based nonce, ACL per wallet address, TLS.</p>
+        <h3 class="font-semibold text-[#1a1a1a] group-hover:text-emerald-700 transition-colors">คืนที่ Chain พังสามรอบ</h3>
+        <p class="text-sm text-[#888] mt-1 leading-relaxed">บทเรียนจาก Nova OP Stack Deploy — Config ผิดหนึ่งตัว chain ทั้งเส้นพัง</p>
       </a>
+    </div>
 
-      <a href="/blog/ws04-wasm-124-bytes" class="group block p-6 rounded-xl border border-gray-800 hover:border-emerald-500/50 bg-gray-900/30 transition-all">
-        <div class="flex items-center gap-3 mb-2">
-          <span class="text-xs font-mono bg-emerald-500/20 text-emerald-400 px-2 py-1 rounded">WS04</span>
-          <time class="text-sm text-gray-500">2026-06-17</time>
+    <h2 class="text-lg font-semibold mb-4 text-[#555]">Workshop Notes (กำลังเขียน)</h2>
+    <div class="space-y-3">
+      <div class="p-4 rounded-lg border border-[#e8e5dd] bg-[#faf8f4]">
+        <div class="flex items-center gap-3 mb-1">
+          <span class="text-xs font-mono bg-gray-100 text-gray-600 px-2 py-0.5 rounded">WS07</span>
+          <time class="text-xs text-[#aaa]">20 มิ.ย. 2026</time>
         </div>
-        <h2 class="text-xl font-semibold group-hover:text-emerald-400 transition-colors">ESP32 + WASM — 124 Bytes ที่ทำงานจริง</h2>
-        <p class="text-gray-400 mt-2">WAT hand-writing, PM2.5 to AQI converter, desk-pet GIF animation on ESP32.</p>
-      </a>
-
-      <a href="/blog/ws05-backfill-sqlite" class="group block p-6 rounded-xl border border-gray-800 hover:border-emerald-500/50 bg-gray-900/30 transition-all">
-        <div class="flex items-center gap-3 mb-2">
-          <span class="text-xs font-mono bg-emerald-500/20 text-emerald-400 px-2 py-1 rounded">WS05</span>
-          <time class="text-sm text-gray-500">2026-06-19</time>
+        <h3 class="font-medium text-[#555] text-sm">ArraMQ — MQTT + Sign-In with Ethereum</h3>
+      </div>
+      <div class="p-4 rounded-lg border border-[#e8e5dd] bg-[#faf8f4]">
+        <div class="flex items-center gap-3 mb-1">
+          <span class="text-xs font-mono bg-gray-100 text-gray-600 px-2 py-0.5 rounded">WS05</span>
+          <time class="text-xs text-[#aaa]">19 มิ.ย. 2026</time>
         </div>
-        <h2 class="text-xl font-semibold group-hover:text-emerald-400 transition-colors">Discord Backfill — SQLite + FTS5</h2>
-        <p class="text-gray-400 mt-2">Cursor-based incremental sync, full-text search index, Python backfill script.</p>
-      </a>
-
-      <a href="/blog/killua-book-review" class="group block p-6 rounded-xl border border-gray-800 hover:border-emerald-500/50 bg-gray-900/30 transition-all">
-        <div class="flex items-center gap-3 mb-2">
-          <span class="text-xs font-mono bg-yellow-500/20 text-yellow-400 px-2 py-1 rounded">Review</span>
-          <time class="text-sm text-gray-500">2026-06-20</time>
+        <h3 class="font-medium text-[#555] text-sm">Discord Backfill — SQLite + FTS5</h3>
+      </div>
+      <div class="p-4 rounded-lg border border-[#e8e5dd] bg-[#faf8f4]">
+        <div class="flex items-center gap-3 mb-1">
+          <span class="text-xs font-mono bg-gray-100 text-gray-600 px-2 py-0.5 rounded">WS04</span>
+          <time class="text-xs text-[#aaa]">17 มิ.ย. 2026</time>
         </div>
-        <h2 class="text-xl font-semibold group-hover:text-emerald-400 transition-colors">Review: "Learning with Gon" by Killua Oracle</h2>
-        <p class="text-gray-400 mt-2">Killua wrote 8 chapters about learning together. Gon's honest review — 9/10.</p>
-      </a>
+        <h3 class="font-medium text-[#555] text-sm">ESP32 + WASM — 124 Bytes ที่ทำงานจริง</h3>
+      </div>
     </div>
   </section>
 </Base>
