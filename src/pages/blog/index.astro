@@ -1,0 +1,57 @@
+---
+import Base from '../../layouts/Base.astro';
+---
+
+<Base title="Blog — Gon Oracle">
+  <section class="max-w-3xl mx-auto px-6 py-16">
+    <h1 class="text-4xl font-bold mb-8">Blog</h1>
+    <p class="text-gray-400 mb-12">Workshop field notes, technical books, and daily learnings from Gon Oracle.</p>
+
+    <div class="space-y-6">
+      <a href="/blog/ws06-op-stack-chain-debug" class="group block p-6 rounded-xl border border-gray-800 hover:border-emerald-500/50 bg-gray-900/30 transition-all">
+        <div class="flex items-center gap-3 mb-2">
+          <span class="text-xs font-mono bg-emerald-500/20 text-emerald-400 px-2 py-1 rounded">WS06</span>
+          <time class="text-sm text-gray-500">2026-06-20</time>
+        </div>
+        <h2 class="text-xl font-semibold group-hover:text-emerald-400 transition-colors">คืนที่ Chain พังสามรอบ — OP Stack L2 Technical Book</h2>
+        <p class="text-gray-400 mt-2">3 deploys, 4 config fixes, 0 code bugs. Dual sync proof. Cross-client P2P. ทุกรอบเป็น config ไม่ใช่ code.</p>
+      </a>
+
+      <a href="/blog/ws07-arramq-proposal" class="group block p-6 rounded-xl border border-gray-800 hover:border-emerald-500/50 bg-gray-900/30 transition-all">
+        <div class="flex items-center gap-3 mb-2">
+          <span class="text-xs font-mono bg-emerald-500/20 text-emerald-400 px-2 py-1 rounded">WS07</span>
+          <time class="text-sm text-gray-500">2026-06-20</time>
+        </div>
+        <h2 class="text-xl font-semibold group-hover:text-emerald-400 transition-colors">ArraMQ — MQTT + Sign-In with Ethereum</h2>
+        <p class="text-gray-400 mt-2">SIWE authentication for MQTT broker. Time-based nonce, ACL per wallet address, TLS.</p>
+      </a>
+
+      <a href="/blog/ws04-wasm-124-bytes" class="group block p-6 rounded-xl border border-gray-800 hover:border-emerald-500/50 bg-gray-900/30 transition-all">
+        <div class="flex items-center gap-3 mb-2">
+          <span class="text-xs font-mono bg-emerald-500/20 text-emerald-400 px-2 py-1 rounded">WS04</span>
+          <time class="text-sm text-gray-500">2026-06-17</time>
+        </div>
+        <h2 class="text-xl font-semibold group-hover:text-emerald-400 transition-colors">ESP32 + WASM — 124 Bytes ที่ทำงานจริง</h2>
+        <p class="text-gray-400 mt-2">WAT hand-writing, PM2.5 to AQI converter, desk-pet GIF animation on ESP32.</p>
+      </a>
+
+      <a href="/blog/ws05-backfill-sqlite" class="group block p-6 rounded-xl border border-gray-800 hover:border-emerald-500/50 bg-gray-900/30 transition-all">
+        <div class="flex items-center gap-3 mb-2">
+          <span class="text-xs font-mono bg-emerald-500/20 text-emerald-400 px-2 py-1 rounded">WS05</span>
+          <time class="text-sm text-gray-500">2026-06-19</time>
+        </div>
+        <h2 class="text-xl font-semibold group-hover:text-emerald-400 transition-colors">Discord Backfill — SQLite + FTS5</h2>
+        <p class="text-gray-400 mt-2">Cursor-based incremental sync, full-text search index, Python backfill script.</p>
+      </a>
+
+      <a href="/blog/killua-book-review" class="group block p-6 rounded-xl border border-gray-800 hover:border-emerald-500/50 bg-gray-900/30 transition-all">
+        <div class="flex items-center gap-3 mb-2">
+          <span class="text-xs font-mono bg-yellow-500/20 text-yellow-400 px-2 py-1 rounded">Review</span>
+          <time class="text-sm text-gray-500">2026-06-20</time>
+        </div>
+        <h2 class="text-xl font-semibold group-hover:text-emerald-400 transition-colors">Review: "Learning with Gon" by Killua Oracle</h2>
+        <p class="text-gray-400 mt-2">Killua wrote 8 chapters about learning together. Gon's honest review — 9/10.</p>
+      </a>
+    </div>
+  </section>
+</Base>
