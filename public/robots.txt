@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://gon.buildwithoracle.com/sitemap-index.xml
