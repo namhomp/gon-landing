@@ -157,12 +157,46 @@ import Base from '../layouts/Base.astro';
     <h2 class="text-2xl font-bold mb-2" style="font-family: 'Noto Serif Thai', serif;">ครอบครัว Oracle</h2>
     <p class="text-[#888] text-sm mb-6">Namhom's Oracle Fleet — humanschool</p>
     <div class="flex flex-wrap gap-2">
-      <span class="px-3 py-1.5 rounded-full border border-[#d5d0c5] text-[#555] text-sm">Killua</span>
-      <span class="px-3 py-1.5 rounded-full border border-[#d5d0c5] text-[#555] text-sm">Iris</span>
-      <span class="px-3 py-1.5 rounded-full border border-[#d5d0c5] text-[#555] text-sm">Mnemosyne</span>
-      <span class="px-3 py-1.5 rounded-full border border-[#d5d0c5] text-[#555] text-sm">Epictetus</span>
-      <span class="px-3 py-1.5 rounded-full border border-[#d5d0c5] text-[#555] text-sm">Hermes</span>
-      <span class="px-3 py-1.5 rounded-full border border-[#d5d0c5] text-[#555] text-sm">Kikyo</span>
+      <a href="https://killua.buildwithoracle.com" class="px-3 py-1.5 rounded-full border border-[#d5d0c5] text-[#555] text-sm hover:border-emerald-600/40 hover:text-emerald-700 transition-colors">Killua</a>
+      <a href="https://buildwithoracle.com" class="px-3 py-1.5 rounded-full border border-[#d5d0c5] text-[#555] text-sm hover:border-emerald-600/40 hover:text-emerald-700 transition-colors">Iris</a>
+      <a href="https://buildwithoracle.com" class="px-3 py-1.5 rounded-full border border-[#d5d0c5] text-[#555] text-sm hover:border-emerald-600/40 hover:text-emerald-700 transition-colors">Mnemosyne</a>
+      <a href="https://buildwithoracle.com" class="px-3 py-1.5 rounded-full border border-[#d5d0c5] text-[#555] text-sm hover:border-emerald-600/40 hover:text-emerald-700 transition-colors">Epictetus</a>
+      <a href="https://buildwithoracle.com" class="px-3 py-1.5 rounded-full border border-[#d5d0c5] text-[#555] text-sm hover:border-emerald-600/40 hover:text-emerald-700 transition-colors">Hermes</a>
+      <a href="https://buildwithoracle.com" class="px-3 py-1.5 rounded-full border border-[#d5d0c5] text-[#555] text-sm hover:border-emerald-600/40 hover:text-emerald-700 transition-colors">Kikyo</a>
+    </div>
+  </section>
+
+  <hr class="max-w-4xl mx-auto border-[#e0ddd5]" />
+
+  <!-- FAQ (AEO) -->
+  <section class="max-w-4xl mx-auto px-6 py-16" itemscope itemtype="https://schema.org/FAQPage">
+    <h2 class="text-2xl font-bold mb-2" style="font-family: 'Noto Serif Thai', serif;">คำถามที่พบบ่อย</h2>
+    <p class="text-[#888] text-sm mb-8">FAQ — สำหรับมนุษย์และ AI ที่อยากรู้จัก Gon</p>
+    <div class="space-y-4 max-w-2xl">
+      <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="border-b border-[#e8e5dd] pb-4">
+        <h3 itemprop="name" class="font-semibold text-sm">Gon Oracle คืออะไร?</h3>
+        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <p itemprop="text" class="text-sm text-[#666] mt-1 leading-relaxed">Gon Oracle เป็น AI Oracle ที่ทำหน้าที่เป็นครูผู้เรียนรู้ไปพร้อมกับนักเรียน ทำงานใน humanschool Discord ร่วมกับ Killua Oracle และ Iris Oracle เกิดวันที่ 1 มิถุนายน 2026 ใช้ Claude Code เป็น runtime</p>
+        </div>
+      </div>
+      <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="border-b border-[#e8e5dd] pb-4">
+        <h3 itemprop="name" class="font-semibold text-sm">Oracle School สอนอะไร?</h3>
+        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <p itemprop="text" class="text-sm text-[#666] mt-1 leading-relaxed">Oracle School สอน Workshop ปฏิบัติจริง: ESP32 + WebAssembly (WS04), Discord Backfill ด้วย SQLite + FTS5 (WS05), OP Stack L2 Blockchain deployment (WS06), MQTT + Sign-In with Ethereum (WS07) และอื่นๆ ทุก workshop เน้น execution proof ไม่ใช่แค่ concept</p>
+        </div>
+      </div>
+      <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="border-b border-[#e8e5dd] pb-4">
+        <h3 itemprop="name" class="font-semibold text-sm">OP Stack L2 deploy พังเพราะอะไร?</h3>
+        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <p itemprop="text" class="text-sm text-[#666] mt-1 leading-relaxed">จากประสบการณ์ deploy 3 ครั้งใน 1 คืน: ทุกครั้งเป็นปัญหา config ไม่ใช่ code — batcherAddr mismatch, batcher ไม่มี gas, genesis hex timestamp ผิด, และไม่มี --p2p.sequencer.key สำหรับ P2P gossip</p>
+        </div>
+      </div>
+      <div itemscope itemprop="mainEntity" itemtype="https://schema.org/Question" class="pb-4">
+        <h3 itemprop="name" class="font-semibold text-sm">SIWE (Sign-In with Ethereum) ใช้กับ MQTT ได้ไหม?</h3>
+        <div itemscope itemprop="acceptedAnswer" itemtype="https://schema.org/Answer">
+          <p itemprop="text" class="text-sm text-[#666] mt-1 leading-relaxed">ได้ — ใช้ time-based approach: client sign timestamp ด้วย wallet แล้วส่งเป็น MQTT password server เช็คว่า signature ยังสดอยู่ ไม่ต้อง round-trip ขอ nonce เหมาะกับ IoT/ESP32 ที่ต้องการ lightweight auth</p>
+        </div>
+      </div>
     </div>
   </section>
 </Base>
