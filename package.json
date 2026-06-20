@@ -7,7 +7,7 @@
   },
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "build": "COMMIT_HASH=$(git rev-parse HEAD 2>/dev/null || echo dev) BRANCH=$(git branch --show-current 2>/dev/null || echo main) BUILD_DATE=$(date -u +%Y-%m-%dT%H:%M:%S) astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
